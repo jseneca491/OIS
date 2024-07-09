@@ -1,0 +1,381 @@
+/* START FONTS */
+
+@font-face {
+    font-family: f1-bold;
+    src: url(Fonts/Formula1-Bold_web_0.ttf);
+}
+
+@font-face {
+    font-family: f1-reg;
+    src: url(Fonts/Formula1-Regular_web_0.ttf);
+}
+
+@font-face {
+    font-family: titillium;
+    src: url(Fonts/TitilliumWeb-Regular.ttf);
+}
+
+/* END FONTS */
+body {
+    background-color: rgba(0, 0, 0, 0.671);
+}
+
+#modal {
+    display: none;
+}
+
+#main-content {
+    width: 795px;
+    margin: 12px auto;
+}
+
+#content {
+    background-color:white;
+    padding: 24px 16px 0;
+    text-align: center;
+    margin: auto;
+    border-radius: 1rem;
+}
+
+#main-content h1 {
+    font-family: f1-bold;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #15151e;
+    margin: auto;
+    width: 50%;
+}
+
+h2{
+    font-family: f1-reg;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 36px;
+    color: #15151e;
+}
+
+h3 {
+    font-family: f1-bold;
+    font-size: 14px;
+    color: #15151e;
+}
+
+h4 {
+    font-family: f1-reg;
+    font-size: 14px;
+    color: #15151e;
+}
+
+p {
+    font-family: titillium;
+    font-size: 16px;
+    color: #15151e;
+}
+
+hr {
+    border-top: 1px solid #ededee;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    margin: 36px 0 0;
+}
+
+#main-btn div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons {
+    margin: 16px 0 20px;
+    padding: 16px;
+    font-weight: bolder;
+    border: 2px solid #ededee;
+    border-radius: 0.3rem;
+    text-transform: uppercase;
+    transition: ease-in-out 300ms;
+}
+
+.buttons:hover {
+    cursor: pointer;
+    transition: ease-in-out 300ms;
+    border: 2px solid #e10600;
+
+}
+
+button#manage-btn {
+    padding-right:30px;
+    background-color: white;
+}
+
+#arrow-right {
+    position: absolute;
+    content: url(img/arrow-right-01.png);
+    width: auto;
+    height: 12px;
+    margin-top: 1px;
+    margin-left: 10px;
+}
+
+.buttons:hover > #arrow-right {
+    height: 15px;
+    margin-top: 0;
+    transition: ease-in-out 90ms;
+}
+
+#manage-btn:hover {
+    border: 2px solid #e10600;
+}
+
+#accept-btn {
+    background-color: #e10600;
+    color: white;
+}
+
+#accept-btn:hover {
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+/* START MODAL */
+
+#modal {
+    width: 970px;
+    margin: 12px auto;
+}
+
+#modal-content {
+    background-color:white;
+    text-align: center;
+    margin: auto;
+    border-radius: 1rem;
+}
+
+#modal-header {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: bottom;
+    padding: 20px;
+    box-shadow: 0 4px 4px 0px #80808040;
+
+}
+
+#modal-header h3 {
+    margin: 5px 0 0;
+    padding-right: 13%;
+    font-size: 20px;
+}
+
+#modal-para h3 {
+    font-size: 18px;
+}
+
+#modal-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    box-shadow: 0 0px 10px 3px #80808040;
+}
+
+#modal-buttons > button {
+    width: 100%;
+    margin: 0 1px;
+    background-color: #e10600;
+    color: white;
+}
+
+#modal-buttons > button:hover {
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+img {
+    width: auto;
+    height: 30px;
+}
+
+#modal-body {
+    padding: 10px;
+}
+
+#modal-para {
+    margin: 10px 0 15px;
+    padding: 0 5px;
+}
+
+#g1, #g2 {
+    background-color: #f9f9fb;
+    padding: 0 10px;
+}
+
+.highlight {
+    color:#e10600;
+}
+
+.align-left {
+    text-align: start;
+    padding: 0 10px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#active + label {
+    pointer-events: none;
+    color:#15151e;
+    min-width: 70px;
+}
+
+label {
+  padding: 5px 10px;
+  background-color: #e7e7e7;
+  color: #e10600;
+  border-radius: 2px;
+  display: inline-block;
+  transition: ease-in-out 200ms;
+    font-family: titillium;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+label:hover {
+    background-color: #cccccc;
+    color: white;
+    transition: ease-in-out 300ms; 
+}
+
+input[type="radio"]:checked + label {
+    background-color: #cccccc;
+    cursor: default;
+    color: white;
+    transition: ease-in-out 200ms;
+}
+
+.accordion {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+}
+
+#g1 .accordion {
+    border-top: 1px solid #ededee;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+.switch {
+    margin: auto 0;
+    min-width: 70px;
+}
+
+/* END MODAL */
+
+/* START RESPONSIVE */
+
+@media only screen and (max-width:991px) {
+    #main-content {
+        width: 800px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    #main-content {
+        width: 100%;
+    }
+    
+    #modal {
+        width: 100%;
+        margin: 12px auto;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    #main-btn div {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 16px 0;
+        margin: 0 8px;
+    }
+    
+    #main-btn button {
+        width: 100%;
+        margin: 0;
+    }
+
+    #manage-btn {
+    margin-top: 12px !important;
+    }
+    
+    #content {
+        padding: 16px 0;
+    }
+
+    #para {
+        padding: 16px 16px 0;
+    }
+    
+    hr {
+        margin-top: 0px;
+    }
+    
+        
+    #main-content h1 {
+        width: 55%;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    #modal-header {
+        display: block;
+    }
+    
+    #modal-header h3 {
+        margin: 10px;
+        padding-right: 0;
+    }
+    
+    #g2 p {
+        margin: 0;
+        padding-top: 10px;
+    }
+
+    #g2 {
+        padding-bottom: 10px;
+    }
+
+    #g2 .accordion {
+        display: block;
+        text-align: left;
+    }
+
+    #g2 .switch {
+        text-align: right;
+    }
+    
+    #modal-buttons {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 10px 10px 0; 
+    }
+    
+    #modal-buttons button {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    #main-content h1 {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+/* END RESPONSIVE */
+
+
